@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<h1>Projects</h1>
+
+  <body>
+      <div class="row">
+        <% @projects.each do |project| %>
+          <div class="col-sm-3">
+            <%= link_to (image_tag project.thumbnail_url(:display)), project, class:"thumbnail" %>
+            <p class="thumbTitle"><%= link_to (project.title), project %></p>
+            </br>
+            </br>
+          </div>
+        <% end %>
+      </div>
+  </body>
+
+  </br>
+  <% if current_user %>
+    <%= link_to 'New Project', new_project_path %>
+  <% end %>
+  </br>
+  </br>
+</div>

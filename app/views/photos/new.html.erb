@@ -1,0 +1,13 @@
+<h1 class="newUser">New Photo</h1>
+
+<%= form_for [@project, @photo] do |f| %>
+<div>
+  <%= f.text_field :title, placeholder: "Title" , class: "newUser form-control"%>
+</div>
+<div>
+  <%= f.file_field :image,class: "newUser form-control userPicture"%>
+</div>
+<div class="actions newUser">
+  <%= f.submit %>
+</div>
+<% end %>

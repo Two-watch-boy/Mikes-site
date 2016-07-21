@@ -1,0 +1,30 @@
+<h1 class="newUser">Editing User</h1>
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: "Name" , class: "newUser form-control"%>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" , class: "newUser form-control"%>
+  </div>
+  <div>
+    <%= f.telephone_field :phone, placeholder: "Phone" , class: "newUser form-control"%>
+  </div>
+  <div>
+    <%= f.file_field :avatar,class: "newUser form-control userPicture"%>
+  </div>
+  <div>
+    <%= f.text_area :bio, placeholder: "Bio" ,class: "newUser form-control userPicture"%>
+  </div>
+  <div>
+    <%= f.text_field :fb_link, placeholder: "Facebook" ,class: "newUser form-control userPicture"%>
+  </div>
+  <div>
+    <%= f.text_field :li_link, placeholder: "Linked in" ,class: "newUser form-control userPicture"%>
+  </div>
+
+  <div class="actions newUser">
+    <%= f.submit %>
+    <%= link_to 'Back', users_path %>
+  </div>
+<% end %>

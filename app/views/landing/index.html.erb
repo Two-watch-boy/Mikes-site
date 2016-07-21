@@ -1,0 +1,19 @@
+<h1 class="header">Michael Dern</h1>
+
+<p class="banner">
+  Breif Description of yourself
+</p>
+<hr>
+<hr>
+<p class="banner">
+  Look at all this stuff to look at,
+</p>
+<div class="container">
+  <div class="row">
+    <% @projects.take(4).each do |project| %>
+      <div class="col-xs-3">
+        <%= image_tag project.thumbnail_url(:display), class:"thumbnail" %>
+      </div>
+      <% end %>
+  </div>
+</div>

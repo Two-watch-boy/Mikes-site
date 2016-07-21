@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body{
+  background-color: #424242;
+}
+.navbar-default {
+  background-color: #272727;
+  z-index: 999;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #8BC34A;
+}
+.thumbnail{
+  width: 80%;
+  margin: auto;
+}
+.thumbTitle{
+  font-size: 2vw;
+  text-align: center;
+}
+.userPhoto, .editUser{
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.userBio{
+  font-size: 20px;
+}
+.userContact{
+  width:20
+}
+.container{
+  background-color: #3b3b3b
+}
+.contact{
+  width: 50px;
+}
+.userPhone{
+  padding-left: 10px;
+}
+.carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     width: 70%;
+     margin: auto;
+ }
+.carouselImage{
+  height:400px;
+}
+.deletePicture{
+  margin-left: 35px;
+}
+.fall{
+  width: 20%;
+}
+.newUser{
+  width: 33%;
+  margin-left: 33%;
+}
+.header{
+  text-align: center;
+  font-size: 4vw;
+}
+.banner{
+  text-align: center;
+  font-size: 2vw;
+  color: grey;
+}
